@@ -4,27 +4,3 @@
 
 //Import
 @import "base", "mixin", "typography", "layout", "syntax.scss", "custom.scss";
-
-.pagination {
-  display: flex;
-  justify-content: center;
-  margin: 20px 0;
-}
-
-.pagination a {
-  padding: 10px 15px;
-  margin: 0 5px;
-  border: 1px solid #ddd;
-  text-decoration: none;
-  color: #007bff;
-}
-
-.pagination a.active {
-  background-color: #007bff;
-  color: white;
-}
-
-.pagination a:hover {
-  background-color: #0056b3;
-  color: white;
-}
