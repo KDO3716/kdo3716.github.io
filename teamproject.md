@@ -2,17 +2,16 @@
 layout: page
 title: TeamProject
 description: This page records a team project.
-paginate: true
 ---
 
-{% assign team_posts = site.posts | where: "tags", "team" %}
-{% for post in paginator.posts %}
-  {% if post.tags contains "team" %}
-    <article>
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-      <p>{{ post.excerpt }}</p>
-    </article>
-  {% endif %}
+{% assign all_team_posts = site.posts | where: "tags", "team" %}
+{% assign team_posts = all_team_posts | slice: 0, paginator.per_page %}
+
+{% for post in team_posts %}
+  <article>
+    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+    <p>{{ post.excerpt }}</p>
+  </article>
 {% endfor %}
 
 <div class="pagination">
