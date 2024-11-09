@@ -1,14 +1,10 @@
 # Site settings
-title: Monochrome | A minimal, responsive Jekyll blog theme
-description: "A minimal, responsive, ready to use blog template, built with Jekyll."
-url: "http://www.dyutibarma.github.io/monochrome"
-author:
-  name: "The Review Index"
-  email: "dyutibarma@gmail.com"
-  url: "https://thereviewindex.com"
+title: KDO_GameDesignPortfolio
+description: "게임기획 포트폴리오 웹사이트"
+url: "https://kdo3716.github.io/"
 
 # Build settings
-baseurl: /monochrome # Change this to your relative path (ex: /blog/), or leave just a /
+baseurl: / # Change this to your relative path (ex: /blog/), or leave just a /
 markdown: kramdown
 source: .
 destination: ./_site
@@ -34,6 +30,6 @@ gems:
 version: "1.0.0"
 
 # Options
-custom_header: false
-custom_nav_footer: false
+custom_header: true
+custom_nav_footer: true
 reverse: false
