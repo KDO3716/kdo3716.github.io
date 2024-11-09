@@ -10,7 +10,7 @@ source: .
 destination: ./_site
 permalink: /:title
 paginate: 5
-paginate_path: /page:num/
+paginate_path: "/teamproject/page:num/"
 
 # Default values
 defaults:
