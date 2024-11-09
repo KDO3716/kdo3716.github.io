@@ -1,31 +1,71 @@
 ---
 layout: page
-title: About Monochrome
-description: This page describes monochrome.
+title: AboutMe
+description: This page describes Me.
 ---
-## About
-Monochrome is a minimal, responsive theme created for Jekyll. The goal of Monochrome is to provide a ready to use, plug and play theme for those who want to set up a blog, and focus solely on the content.
 
-## Features
+반갑습니다! 게임기획자 지망생 강동오입니다. 액션 RPG, 서브컬쳐, 인디 게임에 관심이 많으며 PC, 콘솔 게임을 즐겨합니다.  
+Dots and Boxes를 재해석한 모바일 퍼즐게임 [Triwar]와 초능력 추리 어드벤처 게임 [스테퍼 케이스] 제작에 참여했습니다.  
+2018년 부터 게임 개발을 공부하였으며, 프로젝트 단기 교육, 취업 스터디, 컴퓨터게임학과 전문학사 과정을 이수했습니다.  
+[국내 게임Mod 이용자 실태조사 연구], [레벨디자인 요소에 근거한 장르 유사성 분석]등 다양한 연구를 진행하며 역량을 키우고 있습니다.  
 
-- Completely responsive and mobile first
-- Clean SEO friendly URLs, auto-generated from post title (no messy dates in the url)
-- SEO title/description integration
-- Sitemap ready
-- Easy customization for header, footer, navigation links, colors, favicon etc
-- Default Monochrome Color Palette - black, white, greys
+### 자격
+2018 | KCCI | 컴퓨터 활용능력 1급  
+2020 | KPC | ITQ 정보기술자격  
+2021 | YBM | Cos Pro 2급 Python  
+2022 | ISTQB | ISTQB CTFL  
 
-### Setup
+### 학력
+2020 ~ 2023 | 용인예술과학대학교 컴퓨터게임과 전문학사  
+2018 ~ 2019 | 고등학교 졸업 학력 검정고시  
+2014 ~ 2017 | 불이 고등대안학교  
 
-Monochrome may be installed by simply downloading the .zip folder from the [repository on Github](https://github.com/thereviewindex/monochrome/archive/master.zip).
+### 수상
+2021 | 우수논문상 | 한국게임학회 추계학술대회  
+2021 | 대상 | 교내 학습법 에세이 공모전  
+2021 | 장려상 | 교내 스터디 노트 공모전  
+2021 | 동상 | 교내 도서관 서평 공모전  
+2022 | 최우수상 | 교내 비교과 공모전  
 
-After extracting the content from the folder into the selected directory, you can type ``jekyll serve`` from the terminal, than open your browser to ``0.0.0.0:4000/monochrome/`` and you will find it there.
+### 교육
+2018 | 파이 대안교육 게임제작 과정  
+2019 | 게임캠퍼스 2기 취업반 과정  
+2022 | 송담파이오니아 게임 유튜브 채널 운영 실습  
 
-Additionally it is possible to fork the repository and use Github Pages as hosting. By following this way it will be enough to change the ``baseurl`` value into the ``_config.yml`` file, with the directory name of your project (for example /blog) or simply with a "/" (slash) if you want install Monochrome in the root. 
+### 개발
+2018 | 팀 파이 TRIWAR 프로그래밍, 총괄  
+2023 | 팀 테트라포드 스테퍼 케이스 QA·디버깅  
 
+### 기술경험
+- 문서도구
+  - 노션
+  - 한글 오피스
+  - MS 오피스
+- 그래픽 도구
+  - 어도비 포토샵
+  - 어도비 일러스트레이션
+  - 어도비 드림위버
+  - 어도비 프리미어 프로
+  - 어도비 인디자인
+  - 피그마
+- 유니티, C#
+- 파이썬, Pygame, PyQT 블라블라~
 
+### 기타 이력
+2019 | 제 11회 경기게임오디션 청충평가단 참여  
+2020 | 대학 학과 내 20학번 스터디 그룹 운영  
+2021 | 마이크로트랙 방송영화제작과 과정 수료  
+2022 | 경기도기숙사 보드게임 동아리 참여  
+2023 | YSC 튜터링 비교과 수업 튜터 참여  
+2023 | 마이크로소프트 Xbox 서포터즈 2기 참여  
+2023 | 한콘진 이달의 우수게임 2023 하반기 기자단 참여  
+2023 | P의 거짓 팬메이드 지도 제작 한국 담당자 참여  
+2024 | 윅스52 서포터즈 6기 참여, 2개 강의 수료  
+2024 | 퓨처 프로젝트: 챌린지 1기 수료  
+2024 | MYME 게임잼 서포터즈 참여  
+2024 | Chat GPT 소설작법 강의 수료  
+2024 | 스마트시티 퍼실리테이터 과정 수료  
 
-For further details on Monochrome, please visit the [repository on Github](https://github.com/thereviewindex/monochrome/).
 
 ![Monochrome](img/monochrome01.png "monochrome")
 
