@@ -11,7 +11,7 @@ description: This page records a team project.
   <article>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
     <p>{{ post.date | date: "%Y-%m-%d" }}</p>
-    <p>{{ post.content | truncate: 150, "..." }}</p>
+    <p>{{ post.content | truncate: 300, "..." }}</p>
   </article>
 {% endfor %}
 
