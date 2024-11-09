@@ -1,15 +1,24 @@
 ---
-layout: default
+layout: page
 title: TeamProject
 description: This page records a team project.
 ---
 
-{% assign team_posts = site.posts | where: "tags", "team" %}
+{% assign all_team_posts = site.posts | where: "tags", "team" %}
+{% assign team_posts = all_team_posts | slice: 0, paginator.per_page %}
+
 {% for post in team_posts %}
+  {% assign filename = post.path | split: '/' | last %}
+  {% assign title = filename | split: '.' | first | remove_first: "YY-MM-DD-" %}
+  {% assign date = filename | split: '-' %}
+  {% assign year = date[0] %}
+  {% assign month = date[1] %}
+  {% assign day = date[2] %}
+
   <article>
-    <h2><a href="{{ post.url }}">{{ post.path | split: '/' | last | split: '.' | first }}</a></h2>
+    <h2><a href="{{ post.url }}">{{ title }}</a></h2>
+    <p>{{ year }}-{{ month }}-{{ day }}</p>
     <p>{{ post.excerpt }}</p>
-    <p>{{ post.date | date: "%Y-%m-%d" }}</p>
   </article>
 {% endfor %}
 
