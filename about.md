@@ -65,9 +65,3 @@ Dots and Boxes를 재해석한 모바일 퍼즐게임 [Triwar]와 초능력 추�
 2024 | MYME 게임잼 서포터즈 참여  
 2024 | Chat GPT 소설작법 강의 수료  
 2024 | 스마트시티 퍼실리테이터 과정 수료  
-
-
-![Monochrome](img/monochrome01.png "monochrome")
-
-
-
