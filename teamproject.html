@@ -5,9 +5,11 @@ description: This page records a team project.
 permalink: /teamproject/
 ---
 {% assign team_posts = site.posts | where: "tags", "team" %}
-{% assign total_pages = team_posts | size | divided_by: 5 %}
+{% assign total_posts = team_posts | size %}
+{% assign total_pages = total_posts | divided_by: 5 | ceil %}
 {% assign current_page = page.current_page | default: 1 %}
-{% assign team_posts_paginated = team_posts | slice: 0, 5 %}
+{% assign offset = current_page | minus: 1 | times: 5 %}
+{% assign team_posts_paginated = team_posts | offset: offset | limit: 5 %}
 
 {% for post in team_posts_paginated %}
 <article>
