@@ -7,7 +7,7 @@ description: This page records a team project.
 {% assign all_team_posts = site.posts | where: "tags", "team" %}
 {% assign team_posts = all_team_posts | slice: 0, paginator.per_page %}
 
-{% for post in team_posts %}
+{% for post in paginator.team_posts %}
   <article>
     <h2><a href="{{ post.url }}">{{ post.header }}</a></h2>
     <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line"> <i>{{ post.date | date_to_string }}</i> </time>
