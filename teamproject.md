@@ -9,9 +9,9 @@ description: This page records a team project.
 
 {% for post in team_posts %}
   <article>
-    <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p>{{ post.date | date: "%Y-%m-%d" }}</p>
-    <p>{{ post.content | truncate: 300, "..." }}</p>
+    <h2><a href="{{ post.url }}">{{ post.url }}</a></h2>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line"> <i>{{ post.date | date_to_string }}</i> </time>
+    <p>{{ post.content | strip_html | truncatewords:50 }}</p>
   </article>
 {% endfor %}
 
