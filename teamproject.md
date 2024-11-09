@@ -10,7 +10,8 @@ description: This page records a team project.
 {% for post in team_posts %}
   <article>
     <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
-    <p>{{ post.excerpt }}</p>
+    <p>{{ post.content | truncate: 150, "..." }}</p>
+    <p>{{ post.date | date: "%Y-%m-%d" }}</p>
   </article>
 {% endfor %}
 
