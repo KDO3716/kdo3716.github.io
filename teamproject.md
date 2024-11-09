@@ -4,15 +4,15 @@ title: TeamProject
 description: This page records a team project.
 ---
 
-{% assign all_team_posts = site.posts | where: "tags", "team" %}
-{% assign team_posts = all_team_posts | slice: 0, paginator.per_page %}
-
-{% for post in team_posts %}
-  <article>
-    <h2><a href="{{ post.url }}">{{ post.header }}</a></h2>
-    <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line"> <i>{{ post.date | date_to_string }}</i> </time>
-    <p>{{ post.content | strip_html | truncatewords:50 }}</p>
-  </article>
+{% assign team_posts = site.posts | where: "tags", "team" %}
+{% for post in paginator.posts %}
+  {% if post.tags contains "team" %}
+    <article>
+      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <time datetime="{{ post.date | date_to_xmlschema }}" class="by-line"> <i>{{ post.date | date: "%Y-%m-%d" }}</i> </time>
+      <p>{{ post.content | strip_html | truncatewords:50 }}</p>
+    </article>
+  {% endif %}
 {% endfor %}
 
 <div class="pagination">
@@ -26,3 +26,4 @@ description: This page records a team project.
     <a href="{{ paginator.next_page_path }}" class="next">Next</a>
   {% endif %}
 </div>
+
