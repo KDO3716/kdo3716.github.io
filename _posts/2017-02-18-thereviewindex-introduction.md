@@ -1,21 +1,55 @@
 ---
-title: TheReviewIndex | Unbiased User Review Summaries | Monochrome
-description: This is an introduction to thereviewindex.com.
-header: TheReviewIndex | Unbiased User Review Summaries
+title: "TRIWAR: Dots and Triangles"
+header: "TRIWAR: Dots and Triangles"
+tags: [team]
 ---
+2018년도 초. 고등 대안학교를 졸업하고 갭이어 기간을 보내던 중 대안학교 선생님의 추천으로 파이대안교육원의 게임개발 단기과정에 참여하게 되었습니다. 해당 과정은 창업·창직 교육의 일부분으로 현업 게임개발자 분들이 강사로 참여하여 아이디어 구체화, 게임 개발, 플랫폼 유통과 마케팅 까지 사업 전반을 경험해보는 프로젝트형 강의였습니다. 저는 4인 1팀을 이루어 Dots and Boxes를 삼각형으로 변형한 "TRIWAR"라는 게임을 제작, 출시하였습니다. 해당 팀에서 유니티 C# 프로그래머 및 팀장을 맡았으며, 기존 코드를 재구성해 선 연결 규칙 수정, 점수 계산 규칙 수정, 스마트폰 화면에 맞는 조작방식 변경, 난이도별 AI 구현 등의 기능을 개발했습니다. 게임은 잘 출시되었지만 평가는 좋지 않았으며 게임 기획이 필요한 이유에 대해 크게 깨닿는 계기가 되었습니다.
 
-The internet is a source of a humongous amount of unstructured content for all sorts of products, in the form of blogs, videos, user and expert reviews, etc. It is almost impossible for anyone to scour all of this disparate data, with contradictory opinions, and thereafter make a correct, or at least optimal, purchase decision.
+<iframe width="699" height="1243" src="https://www.youtube.com/embed/CmdVqZRFIEw" title="Triwar" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<center><p>Facebook 홍보용으로 제작한 TRIWAR 게임플레이 영상</p></center>  
 
-Generally, the main problem any average consumer faces while trying to research products online is that there are too many sites with far too much information, and there is typically a disparity in the various opinions expressed. Also, it is not easy to differentiate between what is genuine, and what isn’t.
+### 프로젝트 개요  
+**조직 :** 팀 파이  
+**역할 :** 프로그래머, 총괄  
+**도구 :** Unity, C#, PPT  
+**성과 :**  
+- 구글 플레이스토어 다운로드 500+ 달성
 
-To help resolve these issues, [The Review Index](https://thereviewindex.com) has launched its discovery and research engine, which simplifies the process of researching products online. It scours various sources on the internet, and mines opinions and reviews for the products. This information is then presented as a unified, unbiased, feature-wise summary scorecard of the aggregate opinion to the end user.
+### 게임 소개  
+Triwar는 Dots and Boxes를 변형한 대전형 전략 퍼즐게임입니다.  
+2인 플레이와 AI플레이를 모두 지원하며, AI는 난이도를 3단계로 설정할 수 있습니다.  
+플레이어는 자신의 차례가 되면, 점과 점을 이어 선을 그릴 수 있습니다.  
+선을 그리면 상대방의 차례로 넘어가며, 서로 돌아가며 선을 그려 판을 채워나갑니다.  
+선이 서로 연결되어 삼각형을 그리면 1점을 획득하고, 자신의 차례를 한 번 더 진행할 수 있습니다.  
+모든 점을 연결해 더이상 삼각형을 그릴 수 없으면 게임이 종료되고, 더 많은 삼각형을 만든 사람이 승리합니다.  
 
-Leveraging cutting-edge Machine Learning Algorithms and Artificial Neural Networks, The Review Index compiles reviews from popular sources which are relevant, and focuses on detection of fine-grained topics and sentiment implied therein. It focuses on evaluating the pros and cons as indicated by the reviewers, while ensuring that fraudulent content is identified and removed.
+### 세부 작업 내용  
+삼각형을 연결하는 규칙 수정  
+>기존에는 사각형으로, 상하좌우 선이 연결되지만, 이 게임에서는 대각선을 연결하는 규칙 추가됨  
+점수 계산 규칙 수정  
+>대각선의 방향을 고려해 1개의 사각형 안에 2개의 삼각형이 이루어지는 것을 구분하고, 점수를 계산하는 규칙 추가  
+구글 애널리틱스를 이용한 광고수익화 기능 추가  
+>게임 한 판이 끝날 때 광고를 재생하는 기능을 추가해 광고 기반 수익 모델을 구현
+터치식 조작 방식 변경  
+>기존에는 PC, 마우스 조작으로 선을 연결하는 방식. 마우스의 위치를 인식해 가상의 선을 그리는 기능을 제거  
+>점을 터치할 시 선택한 점이 활성화 되고, 2개의 점을 활성화 하면 선을 잇는 방식으로 조작을 변경  
+>이때, 점과 점의 거리가 2블록 이상 멀어질 경우, 선을 연결할 수 없는 예외처리 추가  
+난이도 별 AI 구현  
+>기존의 AI를 삼각형 연결 규칙에 적합하도록 수정  
+>AI가 확률적으로 실수 할 수 있도록 코드를 추가해 난이도를 설정  
 
-The public beta was launched in January 2017 with six product categories, which include [Mobiles](https://thereviewindex.com/mobiles), [Speakers](https://thereviewindex.com/speakers), [Televisions](https://thereviewindex.com/televisions), [Routers](https://thereviewindex.com/routers), [Microwaves](https://thereviewindex.com/microwaves) and [Washing Machines](https://thereviewindex.com/washingmachines) and caters to Indian consumers. Reviews from popular online stores are compiled and reconciled using Neural Network based algorithms, and feature-wise summaries of the aggregated opinion is created.
+### 포스트모템  
+**긍정적 평가**  
+독학으로 게임을 개발해 본 경험은 있었으나, 실제 게임을 출시까지 이어 본 경험은 처음이었다.  
+특히, 아이디어 구체화와 사업화, 투자제안을 받는 방법에 대해서는 다른 분야에서도 요긴하게 쓸 내용인 것 같다.  
+더불어 유통플랫폼 등록, SNS 마케팅, 고객 타겟팅, KPI분석 등 게임 산업 전반에 대한 경험은 무척 유익했다.  
+**부정적 평가**  
+그러나, 실질적으로는 그다지 많은 다운로드 횟수를 달성하지 못했으며 대부분의 평가도 좋지 못했다.  
+게임 내 광고 기능은 종종 버그가 발생해 재생이 되지 않았으며, 수업이 끝나면서 유지보수가 이루어지지 않았다.  
+가장 중요한 점은 게임성이 기존의 Dots and Boxes와 크게 다를 바 없었다는 점이다.  
+이를 통해 게임은 무엇보다 기획이 중요하다는 점을 깨닳았으며, 이는 내가 게임기획자로 전향하게 되는 중요한 계기가 되었다.  
 
-Thus, this search engine enables users to discover the optimal products, which satisfy their various requirements. The users are also provided with access to feature-wise ratings, summary, list of pros and cons, as well as user comment snippets. Eventually, the engine compares the prices for the displayed products across all the online stores, to conclude which one has the most cost-effective offering.
-
-The plan is to expand to more categories such as electronics, home appliances, etc. in the near future, while at the same time expanding the sources of opinions.
-
-
+### 게임 이미지  
+![소개1.png](img/Triwar/0.jpg)  
+![소개2.png](img/Triwar/1.jpg)  
+![소개3.png](img/Triwar/2.jpg)  
