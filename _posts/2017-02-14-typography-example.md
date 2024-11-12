@@ -1,27 +1,40 @@
 ---
-title: Typography Example | Monochrome
-description: This page demonstrates typography in markdown.
-header: Typography Example
+title: "국내 게임 이용자 모드 이용 실태에 관한 설문 연구"
+header: "TRIWAR: Dots and Triangles"
+tags: [sub]
 ---
-![Test](/monochrome/img/img-test.png "Test")
-Lorem ipsum dolor sit amet, [consectetur adipisicing](http://www.example.com) elit. Id, aliquam magni et officiis nemo nihil aliquid placeat alias. Eum voluptates ducimus, nobis ex illum laboriosam quidem corrupti impedit ratione in voluptatum amet beatae facilis temporibus voluptate praesentium voluptatibus! At ab, iusto error amet eveniet debitis ipsa recusandae possimus minima sunt itaque, nulla ducimus officia, consequatur ipsum laudantium magnam hic fuga vero incidunt nostrum. Commodi, perspiciatis ut nostrum fugit nulla cumque voluptate harum nemo accusamus? 
+2021년도 초. 대학교 2학년 시절. 게임 기획에 관련된 강의에서 제출한 조별과제(3인 1팀)의 우수성을 인정받아 교수님의 추천으로 한국게임학회 추계학술발표대회에 참여하게 되었습니다. 연구 주제는 "국내 게임 이용자 모드 이용 실태에 관한 설문 연구"이며, 모드 이용이 활발한 16개 게임을 선정해 해당 게임 이용자를 대상으로 설문 연구를 진행하였습니다. 초기 과제에서 작성한 게임모드 세부 유형 별 구분 표를 기준으로 게임 모드의 평가 기준을 수립하고, 이를 기준으로 설문조사 문항을 설계하였습니다. 학술적 가치가 있는 결과물을 생산해 본 유익한 경험이었으며 설문조사 연구와 연구 논문 작성에 대해 배울 수 있었습니다.  
+  
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/TNITRbkEybg?si=nCeiT32AW7T6Ljvw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe></center>  
+<center><p>Facebook 한국게임학회 추계학술발표대회 발표 영상. Covid-19에 의해 비대면으로 진행되었음</p></center>  
 
-## This is a h2
+### 프로젝트 개요  
+**조직 :** 용인송담대학교 (현 용인예술과학대학교)  
+**역할 :** 제 1저자  
+**도구 :** 구글 폼, MS 워드, MS PPT, MS 엑셀 등  
+**성과 :**  
+- 2021년도 한국게임학회 추계학술발표대회 우수논문상 수상  
+- 지금까지 없었던 국내 게임 모드 이용 현황에 대한 통계를 조사  
+- 정보 인지 경로에 따른 게임 모드 이용률 차이, 모드의 긍정적·부정적 인식, 게임 유형별 모드 이용률 차이 등의 연구 결과 완성  
+  
+### 연구 소개  
+>해외에서는 게임 소비자들이 직접 게임 내에서 사용되는 아트워크나 부분적 확정 플레이 메커니즘들을 만들어서 공유하는 게임 모딩이 활성화되어 있고 관련 연구도 다양하다. 반면, 국내의 관련 연구는 마인크래프트 활용 연구를 제외하면 미미하다. 우리는 본 논문에서 스팀, 배틀넷 등에서 한국인 사용자가 상당수 있는 모드 허용 게임 16개를 선정하고 그 게임 커뮤니티 이용자를 대상으로 게임 모드 이용 실태 및 제작 경험자의 제작 동기 등을 설문 조사를 통해 알아보았다. 288명의 응답자 중 86%가 모딩을 활용하고 있었으며 10대들의 참여가 높았다. 13% 정도에 해당하는 모더들은 아트워크를 중심으로 모드를 제작했으며 창작 욕구와 탐구 정신이 주 제작 동기였다.  
+> -발표 논문 요약 부분-  
 
-### h3, h4, h5 and h6 have the same style.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas sed quo atque *perspiciatis*. Eius cum possimus, maxime unde, asperiores neque blanditiis molestiae ipsa odit. **Laboriosam**, error! Ipsa officia magnam at ratione commodi porro nulla consequuntur eum quia nisi officiis cupiditate reprehenderit provident facilis rem, nobis quidem fugiat, et! Tempore maiores reprehenderit laboriosam rerum? 
-
-> This is a blockquote
-
-### Unordered list
-- list 1
-- list 2
-- list 3
-- list 4
-
-### Ordered list
-1. one
-2. two
-3. three
-4. four
+[조별과제 연구 보고서 초안](doc/kcgs_FallAcademicCompetition/GameMod에_관한_국내_이용자의_인식과_경험_조사.pdf/)  
+[국내 게임 모드 이용 실태에 관한 설문 조사 연구 논문](doc/kcgs_FallAcademicCompetition/게임_모드_이용_실태에_관한_설문_조사_연구_논문.pdf/)  
+[2021년도 한국게임학회 추계학술발표대회 영상발표자료](doc/kcgs_FallAcademicCompetition/21년도_한국게임학회_추계학술대회_영상발표자료)  
+[2021년도 한국게임학회 추계학술발표대회 프로시딩 링크]([https://example.com/files/myfile.pdf](https://kcgs.or.kr/board/presentation/article/172033))  
+  
+### 포스트모템  
+**긍정적 평가**  
+온라인 게임과 모바일 게임 위주로 성장해온 탓에 국내 게임 연구에서는 모드에 관한 연구가 다소 부족했습니다.  
+본 연구가 앞으로 계속 발전될 다른 연구들의 선행 자료로서 활용될 수 있으리라 기대합니다.  
+  
+**부정적 평가**  
+원래 조별과제를 위한 작업물로, 대회 참여를 예상하지 못해 팀원들의 참여율을 충분히 이끌어내지 못했습니다. (공동 교신저자로 참여했다면 보다 넓은 시각에서 해석할 수 있었을 것.)  
+교수님과의 소통이 미흡해 대회 일정 전달이 제대로 이루어지지 못했고, 다소 늦은 날짜에 논문 작업에 착수하였습니다.  
+모드 지원 게임이 적다보니 가장 인기있는 특정 게임에 이용자가 몰려 다소 편향적인 설문이 이루어졌습니다. 다른 설문을 진행할 때에는 응답자를 제한해 평균을 맞출 것을 고려하겠습니다.  
+  
+### 이미지  
+![우수논문상 수상.jpg](img/kgcs.jpg)  
