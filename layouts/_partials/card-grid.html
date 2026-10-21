@@ -1,0 +1,63 @@
+{{- /*
+카드 그리드 (1:1 썸네일 + 아래 제목/요약). 랜딩 페이지(recent-cards 숏코드)와 Project 목록 페이지가 함께 사용합니다.
+
+사용법: {{ partial "card-grid.html" (dict "pages" $pages "requireImage" true) }}
+- pages: 카드로 보여줄 글 목록
+- requireImage: true면 이미지가 없는 글이 있을 때 경고를 출력 (카드에는 No_Image.webp 표시)
+
+썸네일 순서: 글 맨 위의 thumbnail → 본문의 첫 이미지 → /images/No_Image.webp
+*/ -}}
+{{- $pages := .pages -}}
+{{- $requireImage := .requireImage | default false -}}
+{{- $fallback := "images/No_Image.webp" | relURL -}}
+
+{{- /* 각 글의 썸네일 주소 찾기 */ -}}
+{{- $thumbs := dict -}}
+{{- range $pages -}}
+  {{- $thumb := .Params.thumbnail | default "" -}}
+  {{- if not $thumb -}}
+    {{- with findRESubmatch `!\[[^\]]*\]\(\s*<?([^)\s>]+)|<img[^>]*?\ssrc=["']([^"']+)["']` .RawContent 1 -}}
+      {{- $m := index . 0 -}}
+      {{- $thumb = or (index $m 1) (index $m 2) -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if $thumb -}}
+    {{- if not (or (hasPrefix $thumb "/") (hasPrefix $thumb "http")) -}}
+      {{- /* 글 폴더 안에 있는 이미지 (예: image.png) */ -}}
+      {{- with .Resources.Get $thumb -}}{{- $thumb = .RelPermalink -}}{{- end -}}
+    {{- else if hasPrefix $thumb "/" -}}
+      {{- $thumb = relURL (strings.TrimPrefix "/" $thumb) -}}
+    {{- end -}}
+  {{- else if $requireImage -}}
+    {{- warnf "%q 글에 이미지가 없어 No_Image.webp로 대신 표시합니다. 글 맨 위에 thumbnail을 지정하거나 본문에 이미지를 1개 이상 넣어주세요." .File.Path -}}
+  {{- end -}}
+  {{- $thumbs = merge $thumbs (dict .RelPermalink ($thumb | default $fallback)) -}}
+{{- end -}}
+
+<style>
+.rc-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; margin-top: 1rem; }
+@media (max-width: 768px) { .rc-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.75rem; } }
+.content a.rc-card, a.rc-card { display: flex; flex-direction: column; overflow: hidden; border-radius: 0.75rem; border: 1px solid rgba(128,128,128,0.25); color: inherit; text-decoration: none; transition: box-shadow .2s, border-color .2s; }
+a.rc-card:hover { border-color: rgba(128,128,128,0.5); box-shadow: 0 4px 16px rgba(0,0,0,0.12); }
+.rc-thumb { aspect-ratio: 1 / 1; overflow: hidden; background: rgba(128,128,128,0.1); }
+.content .rc-thumb img, .rc-thumb img { display: block; width: 100%; height: 100%; object-fit: cover; margin: 0; transition: transform .3s; }
+a.rc-card:hover .rc-thumb img { transform: scale(1.04); }
+.rc-body { padding: 0.75rem 0.9rem 0.9rem; }
+.rc-title { font-weight: 600; line-height: 1.4; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.rc-summary { margin-top: 0.3rem; font-size: 0.875rem; line-height: 1.5; opacity: 0.7; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+@media (max-width: 480px) { .rc-summary { display: none; } }
+</style>
+
+<div class="rc-grid not-prose">
+  {{- range $pages }}
+  <a class="rc-card" href="{{ .RelPermalink }}">
+    <div class="rc-thumb"><img src="{{ index $thumbs .RelPermalink }}" alt="{{ .Title }}" loading="lazy"></div>
+    <div class="rc-body">
+      <div class="rc-title">{{ .Title }}</div>
+      {{- with (.Params.summary | default .Summary | plainify) }}
+      <div class="rc-summary">{{ . }}</div>
+      {{- end }}
+    </div>
+  </a>
+  {{- end }}
+</div>

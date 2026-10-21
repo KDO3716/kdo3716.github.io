@@ -1,5 +1,7 @@
 ---
 title: Project
+layout: cards
+requireImage: true
 cascade:
   type: blog
 ---

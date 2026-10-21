@@ -1,5 +1,6 @@
 ---
 title: Blog
+layout: cards
 cascade:
   type: blog
 ---
