@@ -2,6 +2,7 @@
 title: My Site
 toc: false
 ---
+<style>#content > h1 { text-align: left; }</style>
 
 This is the landing page.
 
