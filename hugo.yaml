@@ -1,5 +1,8 @@
 # Hugo configuration file
 title: KangDongOh | Game Design Blog
+cascade:
+  sidebar:
+    hide: true
 
 # import hextra as module
 module:
