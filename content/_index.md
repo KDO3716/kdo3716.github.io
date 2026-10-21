@@ -25,6 +25,11 @@ toc: true
 
 {{< recent-cards section="project" count="3" requireImage="true" >}}
 
+<p><a href="/project/">Read more →</a></p>
+
 ## Blog
 
 {{< recent-cards section="blog" count="3" >}}
+
+<p><a href="/blog/">Read more →</a></p>
+
