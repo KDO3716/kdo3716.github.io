@@ -43,3 +43,5 @@ params:
 
   editURL:
     enable: false
+
+  baseURL: "https://kdo3716.github.io/"
