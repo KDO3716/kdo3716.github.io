@@ -21,11 +21,11 @@ markup:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
+    - name: Project
+      pageRef: /project
       weight: 1
-    - name: About
-      pageRef: /about
+    - name: Blog
+      pageRef: /blog
       weight: 2
     - name: Search
       weight: 4
