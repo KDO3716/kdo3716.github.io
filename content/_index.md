@@ -23,15 +23,8 @@ toc: true
 
 ## Project
 
-{{< cards >}}
-  {{< card link="project/example-project" title="예시 프로젝트" subtitle="프로젝트 글 구조를 확인하기 위한 임시 글입니다." icon="puzzle" >}}
-  {{< card link="project" title="전체 프로젝트 보기" icon="folder-open" >}}
-  {{< card link="project" title="전체 프로젝트 보기" icon="folder-open" >}}
-  {{< card link="project" title="전체 프로젝트 보기" icon="folder-open" >}}
-
-
-{{< /cards >}}
+{{< recent-cards section="project" count="3" requireImage="true" >}}
 
 ## Blog
 
-For more information, visit [Hextra](https://imfing.github.io/hextra).
+{{< recent-cards section="blog" count="3" >}}
