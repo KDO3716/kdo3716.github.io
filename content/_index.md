@@ -5,7 +5,7 @@ toc: true
 <style>#content > h1 { text-align: left; }</style>
 
 <div style="display:flex; align-items:center; gap:2rem; flex-wrap:wrap; margin:1.5rem 0;">
-  <img src="/images/IDphoto.jpg" alt="증명사진" style="width:160px; border-radius:12px; margin:0;">
+  <img src="/images/IDphoto.webp" alt="증명사진" style="width:160px; border-radius:12px; margin:0;">
   <div style="flex:1; min-width:240px;">
     <h4>1건의 퍼즐게임, 3건의 추리게임 출시 경험이 있는 게임 디자이너입니다.</h4>
     <p>

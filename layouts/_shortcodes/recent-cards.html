@@ -4,14 +4,14 @@
 사용법: {{< recent-cards section="project" count="3" requireImage="true" >}}
 - section: 글을 가져올 섹션 (content 아래 폴더 이름)
 - count: 보여줄 글 개수 (기본 3)
-- requireImage: "true"면 이 섹션의 글 중 이미지가 없는 글이 있을 때 경고를 출력 (카드에는 No Image.png 표시)
+- requireImage: "true"면 이 섹션의 글 중 이미지가 없는 글이 있을 때 경고를 출력 (카드에는 No_Image.webp 표시)
 
-썸네일 순서: 글 맨 위의 thumbnail → 본문의 첫 이미지 → /images/No Image.png
+썸네일 순서: 글 맨 위의 thumbnail → 본문의 첫 이미지 → /images/No_Image.webp
 */ -}}
 {{- $section := .Get "section" -}}
 {{- $count := .Get "count" | default 3 | int -}}
 {{- $requireImage := eq (.Get "requireImage") "true" -}}
-{{- $fallback := "images/No%20Image.png" | relURL -}}
+{{- $fallback := "images/No_Image.webp" | relURL -}}
 {{- $all := (where site.RegularPages "Section" $section).ByDate.Reverse -}}
 
 {{- /* 각 글의 썸네일 주소 찾기 */ -}}
@@ -32,7 +32,7 @@
       {{- $thumb = relURL (strings.TrimPrefix "/" $thumb) -}}
     {{- end -}}
   {{- else if $requireImage -}}
-    {{- warnf "%q 글에 이미지가 없어 No Image.png로 대신 표시합니다. 글 맨 위에 thumbnail을 지정하거나 본문에 이미지를 1개 이상 넣어주세요." .File.Path -}}
+    {{- warnf "%q 글에 이미지가 없어 No_Image.webp로 대신 표시합니다. 글 맨 위에 thumbnail을 지정하거나 본문에 이미지를 1개 이상 넣어주세요." .File.Path -}}
   {{- end -}}
   {{- $thumbs = merge $thumbs (dict .RelPermalink ($thumb | default $fallback)) -}}
 {{- end -}}
