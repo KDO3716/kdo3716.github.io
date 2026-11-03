@@ -1,4 +1,5 @@
 # Hugo configuration file
+baseURL: "https://kdo3716.github.io/"
 title: KangDongOh | Game Design Blog
 cascade:
   sidebar:
@@ -49,4 +50,3 @@ params:
   editURL:
     enable: false
 
-  baseURL: "https://kdo3716.github.io/"

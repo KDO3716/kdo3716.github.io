@@ -1,5 +1,6 @@
 ---
-title: About
+title: 강동오 | 게임 기획자 포트폴리오
+description: 게임 기획자 강동오의 포트폴리오 사이트입니다.
 toc: true
 ---
 <style>#content > h1 { text-align: left; }</style>
