@@ -36,15 +36,15 @@ params:
   description:
     "게임 기획자 강동오의 포트폴리오 사이트입니다."
   images:
-    - "images/IDphoto.png"
+    - "images/IDphoto_Preview.png"
 
   navbar:
-    displayTitle: false
+    displayTitle: true
     displayLogo: true
 
   footer:
-    displayCopyright: false
-    displayPoweredBy: true
+    displayCopyright: true
+    displayPoweredBy: false
 
   editURL:
     enable: false
