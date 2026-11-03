@@ -3,6 +3,7 @@ baseURL: "https://kdo3716.github.io/"
 title: KangDongOh | Game Design Blog
 languageCode: ko
 defaultContentLanguage: ko
+enableRobotsTXT: true
 
 cascade:
   sidebar:
